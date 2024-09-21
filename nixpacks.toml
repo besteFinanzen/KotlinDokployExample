@@ -1,0 +1,7 @@
+[phases.build]
+builder = "nixpacks"
+cmds = ['gradle clean shadowJar']
+
+[start]
+cmd = "java $JAVA_OPTS -jar build/libs/de.bytecave.testkotlin-all.jar"
+
